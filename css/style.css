@@ -89,7 +89,7 @@ header h1{
 }
 .main-nav a{
     position: relative;
-    font-weight: 3px;
+    font-weight: 5px;
     color: aliceblue;
 }
 .main-nav a::after{
