@@ -116,7 +116,7 @@ a:hover::after {
 }
 .big-bg{
     background-size: cover;
-    background-position: center 200px;
+    background-position: center 150px;
     background-repeat: no-repeat;
     background-image: url(../images/university.jpg);
     min-height: 100vh;
