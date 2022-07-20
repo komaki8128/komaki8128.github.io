@@ -1,21 +1,57 @@
 <!DOCTYPE html>
 <html lang="ja">
-<head>
-    <meta charset="UTF-8">
-    <title>外部ライブラリ</title>
-</head>
-<body>
-    <header>
-        <h1>外部ライブラリ</h1>
-    </header>
+    <head>
+        <meta charset="utf-8">
+        <title>Maki University</title>
+        <link rel="icon" href="images/fabicon.png">
+        <meta name="description" content="Komaki Ishitaniが創立した大学">
+        <link href="css/style.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    </head>
 
-    <div>
-            <h2>jQuery</h2>
-    </div>
-
-
-    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
-
-    <script src="./js/main.js"></script>
-</body>
+    <body>
+        <div class="big-bg" id="home">
+            <header>
+                <div class="sub-nav">
+                    <nav id="left-nav">
+                        <ul class="left-nav">
+                            <li id="language"><span class="material-icons md-36 md-dark">language</span><p>language</p></li>
+                            <li id="visiter"><span class="material-icons md-36 md-dark">person_2</span><p>訪問者別</p></li>
+                        </ul>
+                    </nav>
+                    <h1><a href="index.html"><img class="logo" src="images/logo.png" alt="Maki University HP"></a></h1>
+                    <nav id="right-nav">
+                        <ul class="right-nav">
+                            <li id="vr"><span class="material-icons md-36 md-dark">vrpano</span><p>VR</p></li>
+                            <li id="search"><span class="material-icons md-36 md-dark">mail</span><p>お問い合わせ</p></li>
+                            <li><span class="material-icons md-36 md-dark">search</span><p>検索</p></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="main-nav">
+                    <nav id="center-nav">
+                        <ul>
+                            <li><a href="#">大学案内</a></li>
+                            <li><a href="#">学部・大学院/教育</a></li>
+                            <li><a href="#">研究・社会貢献・SDGs</a></li>
+                            <li><a href="#">グローバル教育・留学</a></li>
+                            <li><a href="#">学生生活</a></li>
+                            <li><a href="#">就職・キャリア</a></li>
+                            <li><a href="#">入学案内</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+            <div class="home-content wrapper">
+                <p id="contents">>大学案内</p>
+                <input type="radio" name="button" value="＞大学案内" id="radio1" style="accent-color:#2A3087;" onclick="changeColor(0)" checked>
+                <input type="radio" name="button" value="＞学部・大学院/教育" id="radio2" style="accent-color:#2A3087;" onclick="changeColor(1)">
+                <input type="radio" name="button" value="＞研究・社会貢献・SDGs" id="radio3" style="accent-color:#2A3087;" onclick="changeColor(2)">
+                <input type="radio" name="button" value="＞グローバル教育・留学" id="radio4" style="accent-color:#2A3087;" onclick="changeColor(3)">
+                <input type="radio" name="button" value="＞学生生活" id="radio5" style="accent-color:#2A3087;" onclick="changeColor(4)">
+                <input type="radio" name="button" value="＞就職・キャリア" id="radio6" style="accent-color:#2A3087;" onclick="changeColor(5)">
+            </div>
+        </div>
+        <script src="./js/main.js"></script>
+    </body>
 </html>
